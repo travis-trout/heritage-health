@@ -1,0 +1,353 @@
+
+var patientGroup, familyNumber, patientincome, scaleLevels, payments;
+
+scaleLevels = [0,1,2,3,4,5];
+payments = [25,35,45,55,65,80];
+function findPayScale(familyNumber,annualIncome){
+// if 1 family member
+	if (familyNumber === 1){
+		if (annualIncome <= 12140){
+			return scaleLevels[0]
+		}
+		if (annualIncome <= 16146){
+			return scaleLevels[1]
+		}
+		if (annualIncome <= 18210){
+			return scaleLevels[2]
+		}
+		if (annualIncome <= 21244){
+			return scaleLevels[3]
+		}
+		if (annualIncome <= 24280){
+			return scaleLevels[4]
+		}
+		if (annualIncome >= 24281){
+			return scaleLevels[5]
+		}
+	};
+//if 2 family members
+	if (familyNumber === 2){
+		if (annualIncome <= 16460){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 21891){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 24690){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 28804){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 32920){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 32921){
+			return scaleLevels[5]
+		};
+	};
+//if 3 family members
+	if (familyNumber === 3){
+		if (annualIncome <= 20780){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 27637){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 31170){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 36365){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 40560){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 40561){
+			return scaleLevels[5]
+		};
+	};
+
+	//if 4 family members
+	if (familyNumber === 4){
+		if (annualIncome <= 25100){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 33383){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 37650){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 43925){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 50200){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 50201){
+			return scaleLevels[5]
+		};
+	};
+
+//if 5 family members
+	if (familyNumber === 5){
+		if (annualIncome <= 29420){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 39130){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 44130){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 51485){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 58840){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 58841){
+			return scaleLevels[5]
+		};
+	};
+
+//if 6 family members
+	if (familyNumber === 6){
+		if (annualIncome <= 33740){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 44874){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 50610){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 59045){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 67480){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 67481){
+			return scaleLevels[5]
+		};
+	};
+
+//if 7 family members
+	if (familyNumber === 7){
+		if (annualIncome <= 38060){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 50620){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 57090){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 66605){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 76120){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 76121){
+			return scaleLevels[5]
+		};
+	};
+
+//if 8 family members
+	if (familyNumber === 8){
+		if (annualIncome <= 42380){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 56365){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 63570){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 74165){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 84760){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 84761){
+			return scaleLevels[5]
+		};
+	};
+
+//if 9 family members
+	if (familyNumber === 9){
+		if (annualIncome <= 46700){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 62111){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 70050){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 81726){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 93401){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 93402){
+			return scaleLevels[5]
+		};
+	};
+
+//if 10 or more family members
+	if (familyNumber >= 10){
+		if (annualIncome <= 51020){
+			return scaleLevels[0]
+		};
+		if (annualIncome <= 67857){
+			return scaleLevels[1]
+		};
+		if (annualIncome <= 76530){
+			return scaleLevels[2]
+		};
+		if (annualIncome <= 89286){
+			return scaleLevels[3]
+		};
+		if (annualIncome <= 102040){
+			return scaleLevels[4]
+		};
+		if (annualIncome >= 102041){
+			return scaleLevels[5]
+		};
+	};
+};
+
+
+//patientGroup = findPayScale(familyNumber,annualIncome);
+
+//console.log('Patient is in group ' +group+  ' and has a fee of $' + payments[patientGroup])
+//console.log(annualIncome)
+//console.log(familyNumber)
+//console.log(patientGroup)
+
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function changeNum(str) {
+    while (str.search(",") >= 0) {
+        str = (str + "").replace(',', '');
+    }
+    return Number(str);
+};
+
+function findIncome(income, payDays){
+	return income * payDays
+};
+
+function round(value, precision) {
+    var multiplier = Math.pow(10, precision || 0);
+    return Math.round(value * multiplier) / multiplier;
+}
+
+//add event listener
+var calBtn = document.getElementById('calcBtn-0')
+
+
+if (!calBtn.addEventListener){
+
+	calBtn.attachEvent('onclick',function(){
+    
+    var show =function(){ document.getElementById('resultBox').style.display = 'block'};
+    var hide =function(){ document.getElementById('resultBox').style.display = 'none'};
+    //find the group the patient is in
+    var income = changeNum(document.getElementById('income-0').value);
+    var pDays = changeNum(document.getElementById('payDays-0').value);
+    var fMems = changeNum(document.getElementById('famMems-0').value);
+    var annIncome = findIncome(income,pDays);
+    var group = findPayScale(fMems,annIncome);
+    
+    if(income && fMems){
+    
+    
+    
+    
+    /*console.log('income is ' + income)
+    console.log('Pdays is ' + pDays)
+    console.log('fmems is ' + fMems)
+    console.log('annincome is ' + annIncome)
+    console.log('Patient is in group ' +(group + 1)+  ' and has a fee of $' + payments[group])*/
+    
+    
+    
+    //update the entry fields
+
+    show()   
+    document.getElementById('annualIncome').innerHTML= '<b><font size = 5>Annual Income: $'+ numberWithCommas(annIncome) +'</font></b>'
+    
+    document.getElementById('monthlyIncome').innerHTML= '<b><font size = 5>Monthly Income: $'+ numberWithCommas((round((annIncome/12),2))) +'</font></b>'
+    
+    document.getElementById('slidingFeeGroup').innerHTML= '<b><font size = 5>Sliding Fee Group: '+ (group + 1) +'</font></b>'
+    
+    document.getElementById('patientPayment').innerHTML= '<b><font size = 5>Patient Pays: $'+ payments[group] +'</font></b>'
+        
+    }
+    else {hide()}
+    
+    //dispay the group and fee for the patient
+    
+    
+    
+    
+        });
+
+}
+
+else{
+	calBtn.addEventListener('click',function(){
+    
+    var show =function(){ document.getElementById('resultBox').style.display = 'block'};
+    var hide =function(){ document.getElementById('resultBox').style.display = 'none'};
+    //find the group the patient is in
+    var income = changeNum(document.getElementById('income-0').value);
+    var pDays = changeNum(document.getElementById('payDays-0').value);
+    var fMems = changeNum(document.getElementById('famMems-0').value);
+    var annIncome = findIncome(income,pDays);
+    var group = findPayScale(fMems,annIncome);
+    
+    if(income && fMems){
+    
+    
+    
+    
+    /*console.log('income is ' + income)
+    console.log('Pdays is ' + pDays)
+    console.log('fmems is ' + fMems)
+    console.log('annincome is ' + annIncome)
+    console.log('Patient is in group ' +(group + 1)+  ' and has a fee of $' + payments[group])*/
+    
+    
+    
+    //update the entry fields
+
+    show()   
+    document.getElementById('annualIncome').innerHTML= '<b><font size = 5>Annual Income: $'+ numberWithCommas(annIncome) +'</font></b>'
+    
+    document.getElementById('monthlyIncome').innerHTML= '<b><font size = 5>Monthly Income: $'+ numberWithCommas((round((annIncome/12),2))) +'</font></b>'
+    
+    document.getElementById('slidingFeeGroup').innerHTML= '<b><font size = 5>Sliding Fee Group: '+ (group + 1) +'</font></b>'
+    
+    document.getElementById('patientPayment').innerHTML= '<b><font size = 5>Patient Pays: $'+ payments[group] +'</font></b>'
+        
+    }
+    else {hide()}
+    
+    //dispay the group and fee for the patient
+    
+    
+    
+    
+        });
+}

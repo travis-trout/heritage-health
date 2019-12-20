@@ -1,0 +1,91 @@
+
+
+ .para {
+    color: #0060a2;
+    font-family: sans-serif;
+    text-align: center;
+} 
+
+#logo {
+	width: 400px;
+	}
+    
+  h1 {
+    color: #3d3d3d;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+}
+    
+ button {
+    background-color: #3d3d3d;
+    color: #f2f2f2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-shadow: 1px 1px #000000;
+    border-radius: 5px;
+    border: none;
+}
+
+  button:hover {
+      background-color: #0060a2;
+      padding: 13px 29px;
+      border: 1px solid #000000;
+      text-shadow: 1px 1px #0050FF;
+      border-style: inset;
+      border-radius: 5px;
+      
+    }
+    
+    
+.bottom {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid #3d3d3d;
+    border-radius: 15px;
+    display: none;
+    
+}
+
+.labels {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #565656;
+}
+    
+input {
+    color: #3d3d3d;
+    text-align: center;
+    border: solid 1px #0060a2;
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+}
+    
+option {
+    color: #3d3d3d;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+}
+
+select {
+    color: #3d3d3d;
+    text-align: center;
+    border: solid 1px #0060a2;
+    border-radius: 4px;
+    width: 200px;
+    height: 20px;
+}
+
+body {
+    background-color: rgb(235, 235, 235)
+}
+
+    

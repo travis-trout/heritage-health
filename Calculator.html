@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<title>Sliding Fee Calculator</title>
+<meta name="calculator used to find out how much a patient is eligible to pay" content="Fee Calculator">
+<meta name="Heritage Health, Calculator, Sliding Fee, Scale, Payment" content="Excel Document">
+<link type="text/css" rel="stylesheet" href="main.css">
+    
+
+</head>
+<body>
+<center>
+	
+	<img id="logo" src="HH-logo_tagline-horizontal.png" alt="HH Logo" />
+	
+    <h1>Sliding Fee Calculator</h1>
+    <br/><br/><br/>
+
+
+
+  <div class='lake' id='top'> 
+  <div>
+    <label class='labels' for="income">Amount of Income Reported</label>
+      <br/>
+    <input type="text" id="income-0" name="income">
+  </div>
+        <br/><br/><br/>
+    
+  <div>
+    <label class='labels' for="famMems">Number of Individuals in Household</label>
+      <br/>
+    <input type="text" id="famMems-0" name="famMems">
+  </div>
+        <br/><br/><br/>
+    <div>
+    <label class='labels' for="payDays">Frequency of Income Reported</label>
+    <br/>
+<select name='payDays' size="1" id='payDays-0'>
+  <option value="1">Anually(Once a Year)</option>
+  <option value="12">Monthly(12 times a Year)</option>
+  <option value="24">Semi-Monthly(24 times a Year)</option>
+  <option value="26">Bi-weekly(26 times a Year)</option>
+  <option value="52">Weekly(52 times a Year)</option>
+  <option value="260">Daily(5 times per Week)</option>
+</select>
+    </div>
+    <br/><br/><br/>
+  <div>
+    <button id="calcBtn-0">Calculate</button>
+    
+    <br/><br/><br/>
+    
+    </div>
+    </div> 
+    </center>
+       
+    <div class='bottom' id='resultBox'>
+    <p class='para' id='annualIncome'></p>
+        <br/><br/>
+    <p class='para' id='monthlyIncome'></p>
+        <br/><br/>
+    <p class='para' id='slidingFeeGroup'></p>
+        <br/><br/>
+    <p class='para' id='patientPayment'></p>
+    </div>
+    
+   <!-- <p id ='result-0'></p> -->
+        
+        
+    
+    <script src="ie7_Sliding_Scale2019.js"> </script>
+</body>
+</html>
+
+
