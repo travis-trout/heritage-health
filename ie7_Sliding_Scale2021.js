@@ -1,4 +1,3 @@
-
 var patientGroup, familyNumber, patientincome, scaleLevels, payments, extraFamilyMembers;
 var incomeScales, g1Scales, g2Scales, g3Scales, g4Scales, g5Scales, g6Scales, g7Scales, g8Scales
 
