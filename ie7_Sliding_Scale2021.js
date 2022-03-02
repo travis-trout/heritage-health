@@ -1,14 +1,14 @@
 var patientGroup, familyNumber, patientincome, scaleLevels, payments, extraFamilyMembers;
 var incomeScales, g1Scales, g2Scales, g3Scales, g4Scales, g5Scales, g6Scales, g7Scales, g8Scales
 
-g1Scales = [12880,17130.4,19320,22540,25760]; //Updated to 2021
-g2Scales = [17420,23168.6,26130,30485,34840]; //Updated to 2021
-g3Scales = [21960,29206.8,32940,38430,43920]; //Updated to 2021
-g4Scales = [26500,35245,39750,46375,53000]; //Updated to 2021
-g5Scales = [31040,41283.2,46560,54320,62080]; //Updated to 2021
-g6Scales = [35580,47321.4,53370,62265,71160]; //Updated to 2021
-g7Scales = [40120,53359.6,60180,70210,80240]; //Updated to 2021
-g8Scales = [44660,59397.8,66990,78155,89320]; //Updated to 2021
+g1Scales = [13590,18074.4,20385,23782.5,27179.9]; //Updated to 2022
+g2Scales = [18310,24352.3,27465,32042.5,36619.9]; //Updated to 2022
+g3Scales = [23030,30629.9,34545,40302.5,46059.9]; //Updated to 2022
+g4Scales = [27750,36907.5,41625,48562.5,55499.9]; //Updated to 2022
+g5Scales = [32470,43185.1,48705,56822.5,64939.9]; //Updated to 2022
+g6Scales = [37190,49462.7,55785,65082.5,74379.9]; //Updated to 2022
+g7Scales = [41910,55740.3,62865,73342.5,83819.9]; //Updated to 2022
+g8Scales = [46630,62017.9,69945,81602.5,93259.9]; //Updated to 2022
 incomeScales = [g1Scales,g2Scales,g3Scales,g4Scales,g5Scales,g6Scales,g7Scales,g8Scales];
 
 scaleLevels = [0,1,2,3,4,5];
